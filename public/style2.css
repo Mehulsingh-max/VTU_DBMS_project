@@ -1,0 +1,14 @@
+body{
+    background-image : url("companynew.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    opacity: 10;
+    height: 150px;
+}
+.card{
+    background-color: rgb(42, 12, 70);
+    color: antiquewhite;
+}
+.card-header{
+    font-weight: 900;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style_profile.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/profile">Profile</a></li>
+      <li><a href="/auth/logout">Logout</a></li>
+    </ul>
+    <h2>User Profile</h2>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-4">
+        <div class="card">
+          <div class="avatar-ctn">
+            <img src="/avatar.jpg" class="avatar" alt="user profile picture"/>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{user.name}}</h5>
+            <p class="card-text">User email address</p>
+            <a href="#" class="btn btn-primary">{{user.email}}</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-8">
+        <div class="card text-center">
+          <div class="card-header">
+            Profile Page
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Hey {{user.name}} welcome back</h5>
+            <p class="card-text">This is your profile page where you can add all the information about yourself</p>
+            
+          </div>
+        <form action="/add_company" method="post">
+          <input type="hidden" value={{id}} name="id">
+          <input type="submit" value="Buy shares" class="btn btn-primary">
+        </form>
+        <h4>Click Below to show Holdings</h4>
+        <form action="/holdings" method="post">
+          <input type="hidden" value={{{user.name}}} name="name">
+          <input type="hidden" value={{id}} name="id">
+          <input type="hidden" value={{bid_price}} name="bid_price">
+          <input type="submit" value="Show Holdings" class="btn btn-primary">
+        </form>
+        <h4>Contact admin</h4>
+        <form action="/contact_admin" method="post">
+          <input type="hidden" value={{id}} name="id">
+          <input type="submit" value="Raise a Concern" class="btn btn-primary">
+        </form>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+
+    <script src="C:\bootstrap-5.2.3-dist\js\bootstrap.min.js">
+</body>
+</html>

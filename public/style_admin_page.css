@@ -1,0 +1,19 @@
+body{
+    background-image : url("admin_wallpaper.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+h1{
+    color: aqua;
+    font-weight: 800;
+}
+.button-group input{
+    background-color:blueviolet;
+    border: 2px solid black;
+    padding:12px;
+    margin-top: 70px;
+    margin-left: 700px;
+}
+.button-group input:hover{
+    background-color: blue;
+}

@@ -1,0 +1,57 @@
+body{
+    background-image : url("bse.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    opacity: 10;
+    height: 150px;
+}
+h1{
+    color: aqua;
+    font-weight: 800;
+    text-align: center;
+}
+h2{
+    color: aqua;
+    font-weight: 800;
+    text-align: center;
+}
+th{
+    color: rgb(20, 212, 6);
+    font-weight: 900;
+}
+td{
+    color: antiquewhite;
+    font-weight: 500;
+}
+.card{
+   background-color: rgb(46, 14, 77);
+   color: antiquewhite;
+   font-weight: 900;
+}
+.main{
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }

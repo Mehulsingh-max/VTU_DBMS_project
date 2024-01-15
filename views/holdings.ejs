@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style_company.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="header-1 text-center">User Holdings</h1>
+    <div class="container mt-5 pt-5">
+        <form action="/add_company" method="post">
+            <input type="hidden" value="<%= id %>" name="id">
+            <input type="submit" value="Buy shares" class="btn btn-primary">
+          </form>
+        <table class="table">
+            <tr>
+                <th>Company Name</th>
+                <th>Shares</th>
+                <th>Date & Time</th>
+                <th>Buying price</th>
+                
+            </tr>
+           <% result.forEach(function(item) { %>
+            
+                <tr>
+                    <td><%= item.company_name %></td>
+                    <td><%= item.shares %></td>
+                    <td><%= item.date %></td>
+                    <td><%= item.buy_price%></td>
+                    <td><form action="/sell_share" method="post">
+                        <input type="hidden" value="<%= id %>" name="id">
+                        <input type="hidden" value="<%= item.company_name %>" name="company_name">
+                        <input type="hidden" value="<%= item.shares %>" name="shares">
+                        <input type="hidden" value="<%= item.buy_price %>" name="buy_price">
+                        <input type="hidden" value="<%= item.date %>" name="date">
+                        <input type="submit" value="Sell" class="btn btn-primary">
+                    </form></td>
+                </tr>
+
+           <% }) %>
+        </table>
+    </div>
+    <script src="C:\bootstrap-5.2.3-dist\js\bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+body{
+    background-image : url("admin_wallpaper.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+h1{
+    color: aqua;
+    text-align: center;
+    font-weight: 800;
+}
+.card{
+    color: floralwhite;
+    font-weight: 700;
+    background-color:rgb(61, 13, 107)
+}

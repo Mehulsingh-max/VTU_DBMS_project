@@ -1,0 +1,23 @@
+body{
+    background-image : url("support.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+h1{
+    color: aqua;
+    text-align: center;
+    font-weight: 800;
+}
+.card{
+    color: floralwhite;
+    font-weight: 700;
+    background-color:rgb(43, 25, 102)
+}
+th{
+    color: rgb(7, 158, 22);
+    font-weight: 1000;
+}
+td{
+    color: rgb(207, 245, 18);
+    font-weight: 900;
+}

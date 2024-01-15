@@ -1,0 +1,19 @@
+body{
+    background-image : url("companynew.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    opacity: 10;
+    height: 150px;
+}
+h1{
+    color: aqua;
+    font-weight: 800;
+}
+th{
+    color: rgb(20, 212, 6);
+    font-weight: 900;
+}
+td{
+    color: antiquewhite;
+    font-weight: 500;
+}
